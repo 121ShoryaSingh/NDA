@@ -11,12 +11,14 @@ const config: Config = {
       colors: {
         offwhite: '#F0FBF3',
         darkoffwhite: '#a8b0aa',
+        darkblue: '#161C2D',
        },
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        
       },
+      boxShadow: {
+        '3xl': '-50px 40px 0px 0px rgba(32, 38, 54, 0.9)',
+      }
     },
   },
   plugins: [],

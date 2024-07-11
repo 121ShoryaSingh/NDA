@@ -1,6 +1,6 @@
 "use client"
 
-import { Description } from '@headlessui/react';
+import CommentPanal from './CommentPanal';
 import React from 'react'
 
 interface FeaturePanalItem {
@@ -27,14 +27,14 @@ const FeatureDescription: FeaturePanalItem = {
 const FeaturePanal = () => {
   return (
     <>
-        <div className='w-[80%] h-full mx-auto flex flex-col px-5 gap-[7rem] xl:flex-row pt-[6.5rem]'>
-            <div className='basis-1/2 flex justify-center'>
+        <div className='w-[80%] max-md:h-[90%] mx-auto flex flex-col px-5 lg:gap-[7rem] lg:flex-row pt-[6.5rem]'>
+            <div className='basis-1/2 h-full flex justify-center px-3'>
                 <img src={FeatureDescription.imageurl} alt="" className='w-auto h-auto max-md:object-cover object-contain object-bottom'/>
             </div>
-            <article className='basis-1/2 flex-grow-0 text-balance'>
+            <article className='basis-1/2 h-full flex-grow-0 text-balance px-3'>
                 <h1 className='text-[36px] font-bold my-9'>{FeatureDescription.title}</h1>
                 <p className='text-[19px] mb-10'>{FeatureDescription.description}</p>
-                <div className='grid grid-rows-2 grid-cols-2'>
+                <div className='grid grid-rows-2 grid-cols-2 md:mb-20 max-md:mb-11'>
                     {ArrayFeature.map((item) => (
                         <div key={item.number} className='flex w-full gap-3 mb-4'>
                             <img src={FeatureDescription.tick} alt="" />
@@ -43,7 +43,6 @@ const FeaturePanal = () => {
                     ))}
                 </div>
             </article>
-
         </div>
     </>
   )

@@ -1,6 +1,8 @@
-import {HeroBanner} from "@/components/HeroBanner";
+import HeroBanner from "@/components/HeroBanner";
 import FeaturePanal from "@/components/FeaturePanal";
 import CommentPanal from "@/components/CommentPanal";
+import PricePanal from "@/components/PricePanal";
+
 
 export default function Home() {
   return (
@@ -8,11 +10,14 @@ export default function Home() {
       <div className="bg-offwhite">
         <HeroBanner/>
       </div>
-      <div className="bg-white w-full h-[80%]">
+      <div className="bg-white w-full">
         <FeaturePanal/>
       </div>
-      <div className="bg-white w-full h-[80%]">
+      <div className="bg-white w-full">
         <CommentPanal/>
+      </div>
+      <div className="bg-offwhite w-full">
+        <PricePanal/>
       </div>
     </div>
   );

@@ -17,12 +17,12 @@ const descriptionItem: descriprtiomItem = {
 }
 
 
-export const HeroBanner = () => {
+const HeroBanner = () => {
   return (
     <>
-      <div className='flex flex-col xl:flex-row px-5 max-md:px-0 md:w-[90%] md:pt-5 mx-auto gap-[3rem] max-lg:gap-[5rem] '>
-        <div className='basis-1/2 h-full flex flex-col justify-center px-3'>
-          <h1 className='text-[50px] text-balance max-sm:text-[30px] font-bold h-auto leading-tight mb-4 mt-[3.3rem]'>
+      <div className='flex flex-col lg:flex-row px-5 max-md:px-0 md:w-[90%] xl:pt-52 md:pt-9  mx-auto gap-[3rem] max-lg:gap-[5rem] '>
+        <div className='basis-1/2 max-xl:pb-5 h-full flex flex-col justify-center px-3'>
+          <h1 className='text-[50px] max-xl:text-[40px] text-balance max-sm:text-[30px] font-bold h-auto leading-tight mb-4 mt-[3.3rem]'>
             {descriptionItem.title}
           </h1>
           <p className='h-auto max-sm:text-[18px] text-balance text-[#606461] text-xl mb-8 font-normal'>
@@ -41,3 +41,5 @@ export const HeroBanner = () => {
     
   )
 }
+
+export default HeroBanner
