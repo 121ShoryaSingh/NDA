@@ -1,15 +1,20 @@
 import React from 'react'
+import { FaArrowRight } from "react-icons/fa6";
 
 interface PlanCardProps {
-    PlanName: string
+    PlanName: string,
+    PlanAmount: string,
+    PlanFeatures?: [],
+    className?: string
+    ButtonText?: string
 }
 
-const PlanCard = () => {
+const PlanCard: React.FC<PlanCardProps> = ({PlanName, PlanAmount, PlanFeatures, className, ButtonText}) => {
   return (
     <div className="flex flex-col p-12 mx-auto max-w-md bg-white rounded-lg border">
-              <span className="mb-4 text-md font-semibold">Company</span>
+              <span className="mb-4 text-md font-semibold text-[#68D585] uppercase">{PlanName}</span>
               <div className="flex items-baseline mt-8 mb-[0.7rem]">
-                  <span className="mr-2 text-5xl font-extrabold">$99</span>
+                  <span className="mr-2 text-5xl font-extrabold">${PlanAmount}</span>
                   <span className="text-black font-semibold">/ month</span>
               </div>
                   <p className="text-gray-400 mb-10">billed monthly</p>
@@ -22,8 +27,12 @@ const PlanCard = () => {
                       <span>Individual configuration</span>
                   </li>
               </ul>
-              <a href="#" className="text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-white  dark:focus:ring-primary-900">Get started</a>
-          </div>
+              <button className={className} >
+                {ButtonText}
+                <FaArrowRight/>
+            </button>
+              <span className='mt-4 text-gray-500'>No credit card required</span>
+    </div>
   )
 }
 

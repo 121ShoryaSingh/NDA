@@ -12,6 +12,7 @@ const config: Config = {
         offwhite: '#F0FBF3',
         darkoffwhite: '#a8b0aa',
         darkblue: '#161C2D',
+        greentext: '#68D585'
        },
       backgroundImage: {
         
