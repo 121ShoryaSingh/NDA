@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Montserrat ,Inter } from "next/font/google";
 import "./globals.css";
 import MobileNav from "@/components/MobileNav";
+import Footer from "@/components/Footer";
 
 const inter = Montserrat({ subsets: ["latin"] });
 

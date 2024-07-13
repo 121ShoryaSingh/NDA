@@ -23,7 +23,7 @@ const FactsPanal = () => {
 
   return (
     <div className='w-full mt-[6.5rem] mb-[4.5rem]'>
-        <div className='h-auto w-fit flex max-md:flex-col justify-center items-center lg:gap-32 gap-12 mx-auto'>
+        <div className='h-auto w-fit flex max-md:flex-col justify-center items-center lg:gap-28 max-sm:gap-5 mx-auto'>
           <div className='w-[16rem] flex flex-col justify-center items-center'>
             <p className="text-5xl font-bold mb-5">
               {FactsDescription.company.companyNumber}

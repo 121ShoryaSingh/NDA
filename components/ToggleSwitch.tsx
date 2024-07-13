@@ -3,13 +3,18 @@
 import { Switch } from '@headlessui/react'
 import { useState } from 'react'
 
-export default function ToggleSwitch() {
-  const [enabled, setEnabled] = useState(false)
+interface ToggleSwitchProps {
+  Enabled: boolean;
+  ToggleEnabled: () => void;
+}
+
+const ToggleSwitch: React.FC<ToggleSwitchProps> = ({Enabled, ToggleEnabled}) => {
+  
 
   return (
     <Switch
-      checked={enabled}
-      onChange={setEnabled}
+      checked={Enabled}
+      onChange={ToggleEnabled}
       className="group relative flex h-7 w-14 cursor-pointer rounded-full bg-[#a8b0aa] p-1 transition-colors duration-200 ease-in-out focus:outline-none data-[focus]:outline-1 data-[focus]:outline-white data-[checked]:bg-[#a8b0aa]"
     >
       <span
@@ -19,3 +24,4 @@ export default function ToggleSwitch() {
     </Switch>
   )
 }
+export default ToggleSwitch

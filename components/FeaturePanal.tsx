@@ -21,14 +21,14 @@ const FeatureDescription: FeaturePanalItem = {
     title: 'Be Yourself Whenever, Wherever,At Anytime',
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.  Lorem Ipsum has been the industry standard dummy text',
     tick: '/check-small.svg',
-    imageurl: '/man_standing.png',
+    imageurl: '/man_standing.svg',
 }
 
 const FeaturePanal = () => {
   return (
     <>
         <div className='w-[80%] max-md:h-[90%] mx-auto flex flex-col px-5 lg:gap-[7rem] lg:flex-row pt-[6.5rem]'>
-            <div className='basis-1/2 h-full flex justify-center px-3'>
+            <div className='basis-1/2 flex justify-center px-3'>
                 <img src={FeatureDescription.imageurl} alt="" className='w-auto h-auto max-md:object-cover object-contain object-bottom'/>
             </div>
             <article className='basis-1/2 h-full flex-grow-0 text-balance px-3'>

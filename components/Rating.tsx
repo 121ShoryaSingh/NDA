@@ -5,6 +5,7 @@ interface RatingProps {
     staricon: string
 }
 
+
 const Rating: React.FC<RatingProps> = ({stars, staricon }) => {
   return (
     <span className='flex gap-1'>
